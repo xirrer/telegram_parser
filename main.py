@@ -62,7 +62,7 @@ async def dump_all_participants(channel):
         all_participants.extend(participants.users)
         offset_user += len(participants.users)
 
-    all_users_details = []  
+    all_users_details = []
 
     for participant in all_participants:
         all_users_details.append({"id": participant.id,
@@ -75,7 +75,7 @@ async def dump_all_participants(channel):
     with open('channel_users.json', 'w', encoding='utf8') as outfile:
         for user_details in all_users_details:
             json.dump(user_details, outfile, ensure_ascii=False)
-            outfile.write('\n') 
+            outfile.write('\n')
 
 
 
@@ -87,3 +87,5 @@ async def main():
 
 with client:
     client.loop.run_until_complete(main())
+
+#thanks for using my repo<3
