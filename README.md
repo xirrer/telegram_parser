@@ -14,6 +14,10 @@ username = YOUR_USERNAME
 ```
 Replace `YOUR_API_ID`, `YOUR_API_HASH`, and `YOUR_USERNAME` with the corresponding values obtained when registering your application on ***my.telegram.org***. Run the code. You will be prompted to enter a link to a channel or chat. Enter the link and press Enter. After the code completes its execution, you will find two files in the same directory: `channel_messages.json` containing all the messages from the channel or chat, and `channel_users.json` containing participant information. 
 
+
+# ИНСТРУКЦИЯ НА РУССКОМ 
+
+
 Этот код предназначен для извлечения сообщений и информации об участниках из каналов и чатов Telegram с использованием библиотеки Telethon. Код состоит из трех основных функций:
 `dump_all_messages(channel)`: Извлекает все сообщения из указанного канала или чата и сохраняет их в файл `channel_messages.json`.
 `dump_all_participants(channel)`: Извлекает информацию обо всех участниках указанного канала или чата и сохраняет их в файл `channel_users.json`.
